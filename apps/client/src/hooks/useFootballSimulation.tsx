@@ -27,11 +27,11 @@ function useFootballSimulation() {
           });
           return updatedMatches;
         });
-      }, 1000);
+      }, 10000);
 
       timeout = setTimeout(() => {
         setSimulationState(SimulationState.Finish);
-      }, 9000);
+      }, 90000);
     } else if (simulationState === SimulationState.Reset) {
       setMatches([...initialMatches]);
       setTimeout(() => setSimulationState(SimulationState.Start), 1000);
