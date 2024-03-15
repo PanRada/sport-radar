@@ -28,6 +28,12 @@ It was created in monorepo for the latest versions of Nest.js and React(Vite) us
 
 ##### Rules for launching applications
 
+2 branch
+**frontend** => `main` 
+**backend** => `backend`
+
+On main is presenting implementation only on Front
+On backend is presenting  both implementations - front and back - NestJs and Websocket 
 
 ```
 **git pull** 
@@ -62,7 +68,7 @@ What try test ?
 - Simulation state transitions from Start -> Running -> Finish -> Reset -> Start.
 - Scores are updated during the simulation.
 - Scores and state are reset correctly.
-2. 
+2. Omit testing E2E same problem as top
 
 
 
