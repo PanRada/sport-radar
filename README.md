@@ -56,8 +56,13 @@ npm run dev
 *Basic and standard linting and priettier toolkit provided with Nest.js and Vite*.
 
 #### What went wrong ?
-- creating a test-ready environment in Vite.js. Early on, the standard settings and library usage in Vite allowed me to add freely. At 4 hours, I didn't want to spend time on this. However, I prepared the code for the test but untested and wrote from a belief of good practice.
-- 
+1. Creating a test-ready environment in Vite.js. Early on, the standard settings and library usage in Vite allowed me to add freely. At 4 hours, I didn't want to spend time on this. However, I prepared the code for the test but untested and wrote from a belief of good practice.
+What try test ?
+- Initial state matches with initialMatches.
+- Simulation state transitions from Start -> Running -> Finish -> Reset -> Start.
+- Scores are updated during the simulation.
+- Scores and state are reset correctly.
+2. 
 
 
 
