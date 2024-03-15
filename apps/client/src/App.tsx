@@ -4,7 +4,10 @@ import { Match, SimulationState } from "./types";
 function App() {
   const { matches, simulationState, toggleSimulation } =
     useFootballSimulation();
-
+  const totalGoals = matches.reduce(
+    (acc, match) => acc + match.score[0] + match.score[1],
+    0
+  );
   function renderMatches(matches: Match[]) {
     return (
       <div>
@@ -30,6 +33,7 @@ function App() {
               : "Start Simulation"}
       </button>
       {renderMatches(matches)}
+      <div>Total Goals: {totalGoals}</div>
     </div>
   );
 }
